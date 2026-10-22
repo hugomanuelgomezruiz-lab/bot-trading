@@ -1,0 +1,36 @@
+2026-10-22 19:51:25  INFO    ==== Inicio del bot (PAPER) - modo cripto ====
+2026-10-22 19:51:26  ERROR   Error inesperado
+Traceback (most recent call last):
+  File "/home/runner/work/_temp/setup-uv-cache/environments-v2/bot-1cd5d4fbbff9783e/lib/python3.12/site-packages/alpaca/common/rest.py", line 198, in _one_request
+    response.raise_for_status()
+  File "/home/runner/work/_temp/setup-uv-cache/environments-v2/bot-1cd5d4fbbff9783e/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/bot-trading/bot-trading/bot.py", line 443, in main
+    ejecutar(Broker(clave, secreto), modo)
+  File "/home/runner/work/bot-trading/bot-trading/bot.py", line 426, in ejecutar
+    seguir, nota = control_comun(broker, estado)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bot-trading/bot-trading/bot.py", line 334, in control_comun
+    cuenta = broker.cuenta()
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/work/bot-trading/bot-trading/bot.py", line 137, in cuenta
+    c = self.trading.get_account()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_temp/setup-uv-cache/environments-v2/bot-1cd5d4fbbff9783e/lib/python3.12/site-packages/alpaca/trading/client.py", line 474, in get_account
+    response = self.get("/account")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_temp/setup-uv-cache/environments-v2/bot-1cd5d4fbbff9783e/lib/python3.12/site-packages/alpaca/common/rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_temp/setup-uv-cache/environments-v2/bot-1cd5d4fbbff9783e/lib/python3.12/site-packages/alpaca/common/rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/_temp/setup-uv-cache/environments-v2/bot-1cd5d4fbbff9783e/lib/python3.12/site-packages/alpaca/common/rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
