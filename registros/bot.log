@@ -34,3 +34,7 @@ Traceback (most recent call last):
     raise APIError(error, http_error)
 alpaca.common.exceptions.APIError: {"message": "unauthorized."}
 
+2026-10-22 19:55:42  INFO    ==== Inicio del bot (PAPER) - modo cripto ====
+2026-10-22 19:55:44  INFO    Ranking cripto: SOL/USD +24.2% (x), BTC/USD +15.6% (x), ETH/USD +14.4% (x)
+2026-10-22 19:55:44  INFO    Objetivo cripto: 0% (en efectivo)
+2026-10-22 19:55:44  INFO    Ciclo cripto terminado.
