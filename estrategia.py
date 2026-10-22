@@ -31,7 +31,8 @@ MEDIA_TENDENCIA = 100       # días de la media móvil de tendencia
 VENTANA_VOLATILIDAD = 63
 DIAS_ENTRE_REBALANCEOS = 5  # semanal (en sesiones de mercado)
 STOP_DINAMICO = 0.10        # vende si cae un 10% desde el máximo alcanzado
-DRAWDOWN_MAXIMO = 0.15      # si la cuenta cae un 15% desde su máximo, todo a liquidez
+FRENO_EMERGENCIA = False    # desactivado a petición del usuario (cuenta Paper)
+DRAWDOWN_MAXIMO = 0.15      # solo se usa si FRENO_EMERGENCIA = True
 DIAS_PAUSA = 28             # días naturales en pausa tras activar el freno de drawdown
 OPERACION_MINIMA_USD = 50
 DESVIO_MINIMO = 0.015       # no ajusta posiciones si el cambio es < 1,5% de la cuenta

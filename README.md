@@ -14,8 +14,8 @@ Se ejecuta en GitHub Actions: no necesita tu ordenador encendido.
 - BTC, ETH y SOL. Elige los 2 con mejor tendencia por encima de su media de 50 días.
 - Rebalancea una vez al día; stop dinámico del 15%.
 
-**Freno de emergencia:** si la cuenta cae un 15% desde su máximo, vende todo y se
-pausa 28 días.
+**Freno de emergencia:** desactivado (cuenta Paper). Se puede reactivar poniendo
+`FRENO_EMERGENCIA = True` en `estrategia.py` (vende todo si la cuenta cae un 15%).
 
 **Seguridad:** se niega a funcionar si la clave no es de Paper (`PK…`) o si la cuenta
 no es Paper. Nunca toca dinero real.

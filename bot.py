@@ -15,8 +15,7 @@ Uso:
 
 En cada ejecución:
   1. Comprueba que la cuenta es Paper; si no, se detiene sin hacer nada.
-  2. Freno de emergencia: si la cuenta cae un 15% desde su máximo, vende todo
-     (acciones y cripto) y se pausa 28 días.
+  2. Freno de emergencia (DESACTIVADO por defecto; ver estrategia.FRENO_EMERGENCIA).
   3. Stop dinámico: vende posiciones que caigan un 10% (acciones) o 15% (cripto)
      desde su máximo.
   4. Rebalancea: acciones cada 5 sesiones; cripto una vez al día.
@@ -348,7 +347,7 @@ def control_comun(broker: Broker, estado: dict) -> tuple[bool, str]:
         estado["ultimo_rebalanceo_cripto"] = None
 
     dd = E.drawdown(patrimonio, estado["patrimonio_maximo"])
-    if dd >= E.DRAWDOWN_MAXIMO:
+    if E.FRENO_EMERGENCIA and dd >= E.DRAWDOWN_MAXIMO:
         log.warning("FRENO DE EMERGENCIA: caída del %.1f%% desde el máximo. Vendo todo.", dd * 100)
         liquidar(broker)
         estado["pausa_desde"] = ahora().date().isoformat()
