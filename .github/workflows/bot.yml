@@ -1,0 +1,59 @@
+name: Bot de trading (Paper)
+
+on:
+  schedule:
+    # Acciones: 15:45 UTC de lunes a viernes (bolsa de EE. UU. abierta todo el año)
+    - cron: "45 15 * * 1-5"
+    # Cripto: cada 4 horas, todos los días
+    - cron: "17 */4 * * *"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "acciones o cripto"
+        required: true
+        default: "acciones"
+        type: choice
+        options: [acciones, cripto]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bot-trading
+  cancel-in-progress: false
+
+jobs:
+  ejecutar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Elegir modo
+        id: modo
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "modo=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "45 15 * * 1-5" ]; then
+            echo "modo=acciones" >> "$GITHUB_OUTPUT"
+          else
+            echo "modo=cripto" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ejecutar bot
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: uv run --python 3.12 bot.py "${{ steps.modo.outputs.modo }}"
+
+      - name: Guardar registros en el repositorio
+        if: always()
+        run: |
+          git config user.name "bot-trading"
+          git config user.email "bot-trading@users.noreply.github.com"
+          git add registros/
+          git diff --cached --quiet || git commit -m "Registro ${{ steps.modo.outputs.modo }} $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase --autostash || true
+          git push || true
