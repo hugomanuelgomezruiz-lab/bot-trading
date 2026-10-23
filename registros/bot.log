@@ -48,3 +48,11 @@ alpaca.common.exceptions.APIError: {"message": "unauthorized."}
 2026-10-23 13:32:05  INFO    ==== Inicio del bot (PAPER) - modo cripto ====
 2026-10-23 13:32:06  INFO    Cripto: ya rebalanceado hoy; solo vigilo stops.
 2026-10-23 13:32:07  INFO    Ciclo cripto terminado.
+2026-10-23 19:33:22  INFO    ==== Inicio del bot (PAPER) - modo acciones ====
+2026-10-23 19:33:25  INFO    Ranking acciones: MSFT +24.5%, LLY +21.2%, XLE +19.3%, XLV +15.1%, AAPL +13.3%, XLK +6.8% (x), COST +4.5%, SPY +3.9%, XLF +3.8%, DIA +3.3%
+2026-10-23 19:33:25  INFO    Objetivo acciones: {'MSFT': 0.0836, 'LLY': 0.1038, 'XLE': 0.1494, 'XLV': 0.1809, 'AAPL': 0.1344, 'COST': 0.178}
+2026-10-23 19:33:25  INFO    Venta XLV 2604.05 $ (orden c63dc024-76ec-4ab6-a5bc-4f40e46825e6)
+2026-10-23 19:33:25  INFO    Venta COST 2429.92 $ (orden 362eea6b-2831-4511-aecd-577b90915440)
+2026-10-23 19:33:28  INFO    Compra AAPL 13369.55 $ (orden a001e806-d449-452b-bef6-13760d05232c)
+2026-10-23 19:33:28  INFO    Compra XLE 14861.69 $ (orden fdc03e2b-ce7e-4aaa-ba1d-8c276be82898)
+2026-10-23 19:33:31  INFO    Ciclo acciones terminado.

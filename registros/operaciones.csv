@@ -1,0 +1,5 @@
+fecha_utc;simbolo;lado;importe_usd;motivo;detalle
+2026-10-23 19:33;XLV;venta;2604.05;rebalanceo_acciones;orden c63dc024-76ec-4ab6-a5bc-4f40e46825e6
+2026-10-23 19:33;COST;venta;2429.92;rebalanceo_acciones;orden 362eea6b-2831-4511-aecd-577b90915440
+2026-10-23 19:33;AAPL;compra;13369.55;rebalanceo_acciones;orden a001e806-d449-452b-bef6-13760d05232c
+2026-10-23 19:33;XLE;compra;14861.69;rebalanceo_acciones;orden fdc03e2b-ce7e-4aaa-ba1d-8c276be82898
