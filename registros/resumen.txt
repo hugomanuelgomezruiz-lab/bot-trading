@@ -1,18 +1,18 @@
 BOT DE TRADING - CUENTA PAPER (dinero ficticio)
-Actualizado: 23/10/2026 04:59 UTC
-Última acción: [cripto] cripto rebalanceada (0 posiciones)
+Actualizado: 23/10/2026 13:32 UTC
+Última acción: [cripto] cripto vigilada (0 stops)
 
-Patrimonio: 99,880.51 $   (inicio: 100,076.06 $, resultado: -195.55 $ / -0.20%)
-Efectivo:   5,000.06 $
-Máximo histórico: 100,103.50 $
+Patrimonio: 100,168.02 $   (inicio: 100,076.06 $, resultado: +91.96 $ / +0.09%)
+Efectivo:   5,680.55 $
+Máximo histórico: 100,175.40 $
 Último rebalanceo acciones: -
 Último rebalanceo cripto:   2026-10-23
 Pausa: no
 
 POSICIONES:
-  XLV        20,821.23 $  ( 20.8%)  P/G -28.76 $ (-0.1%)
-  COST       20,347.38 $  ( 20.4%)  P/G -2.61 $ (-0.0%)
-  XLE        17,032.81 $  ( 17.1%)  P/G +42.82 $ (+0.3%)
-  AAPL       15,289.68 $  ( 15.3%)  P/G +9.69 $ (+0.1%)
-  LLY        11,973.06 $  ( 12.0%)  P/G -66.93 $ (-0.6%)
-  MSFT        9,416.29 $  (  9.4%)  P/G -73.70 $ (-0.8%)
+  XLV        20,714.26 $  ( 20.7%)  P/G -135.73 $ (-0.7%)
+  COST       20,455.47 $  ( 20.4%)  P/G +105.48 $ (+0.5%)
+  XLE        16,434.22 $  ( 16.4%)  P/G +119.63 $ (+0.7%)
+  AAPL       15,454.33 $  ( 15.4%)  P/G +174.34 $ (+1.1%)
+  LLY        11,962.86 $  ( 11.9%)  P/G -77.13 $ (-0.6%)
+  MSFT        9,466.78 $  (  9.5%)  P/G -23.21 $ (-0.2%)
