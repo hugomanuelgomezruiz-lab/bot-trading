@@ -66,3 +66,6 @@ alpaca.common.exceptions.APIError: {"message": "unauthorized."}
 2026-10-24 04:44:45  INFO    Ranking cripto: SOL/USD +17.0% (x), ETH/USD +11.8% (x), BTC/USD +11.3% (x)
 2026-10-24 04:44:45  INFO    Objetivo cripto: 0% (en efectivo)
 2026-10-24 04:44:45  INFO    Ciclo cripto terminado.
+2026-10-24 12:44:30  INFO    ==== Inicio del bot (PAPER) - modo cripto ====
+2026-10-24 12:44:31  INFO    Cripto: ya rebalanceado hoy; solo vigilo stops.
+2026-10-24 12:44:32  INFO    Ciclo cripto terminado.
