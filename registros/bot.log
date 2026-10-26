@@ -98,3 +98,6 @@ alpaca.common.exceptions.APIError: {"message": "unauthorized."}
 2026-10-26 04:59:47  WARNING Quedan órdenes abiertas tras 120s; sigo igualmente.
 2026-10-26 05:01:48  WARNING Quedan órdenes abiertas tras 120s; sigo igualmente.
 2026-10-26 05:01:48  INFO    Ciclo cripto terminado.
+2026-10-26 15:15:19  INFO    ==== Inicio del bot (PAPER) - modo cripto ====
+2026-10-26 15:15:20  INFO    Cripto: ya rebalanceado hoy; solo vigilo stops.
+2026-10-26 15:15:20  INFO    Ciclo cripto terminado.
