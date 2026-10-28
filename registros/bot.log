@@ -127,3 +127,6 @@ alpaca.common.exceptions.APIError: {"message": "unauthorized."}
 2026-10-28 15:11:01  INFO    ==== Inicio del bot (PAPER) - modo cripto ====
 2026-10-28 15:11:02  INFO    Cripto: ya rebalanceado hoy; solo vigilo stops.
 2026-10-28 15:11:02  INFO    Ciclo cripto terminado.
+2026-10-28 20:34:53  INFO    ==== Inicio del bot (PAPER) - modo acciones ====
+2026-10-28 20:34:53  INFO    Bolsa cerrada: no opero acciones.
+2026-10-28 20:34:53  INFO    Ciclo acciones terminado.
