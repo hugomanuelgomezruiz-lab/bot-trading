@@ -1,36 +1,33 @@
-# Bot de trading — SOLO PAPER (Alpaca)
+# Bot intradía AGRESIVO — SOLO PAPER (Alpaca)
 
-Bot de riesgo medio que opera **solo con dinero ficticio** (cuenta Paper de Alpaca).
-Se ejecuta en GitHub Actions: no necesita tu ordenador encendido.
+Opera **largos y cortos** dentro del día con **dinero ficticio** (cuenta Paper).
+Funciona en GitHub Actions, ajustado a los **2.000 minutos gratis** al mes.
 
-## Qué hace
-**Acciones/ETFs (83% de la cuenta)** — una vez al día con la bolsa de EE. UU. abierta:
-- Universo de 24 activos líquidos (SPY, QQQ, GLD, TLT, AAPL, MSFT, NVDA…).
-- Cada 5 sesiones elige los 6 con mejor tendencia (1, 3 y 6 meses) que estén por
-  encima de su media de 100 días. Pesa menos a los más volátiles. Máx. 22% por posición.
-- Stop dinámico: vende si una posición cae un 10% desde su máximo.
+## Cómo opera
+- **Una sesión al día de ~70 min**, normalmente justo tras la apertura de EE. UU.
+  (la parte más movida del día). Si GitHub se retrasa, la hace más tarde.
+- **Universo:** NVDA, TSLA, AMD, META, AAPL, AMZN, MSFT, GOOGL, NFLX, AVGO, PLTR, COIN, QQQ, SPY.
+- **Señal:** rotura del rango de los 15 primeros minutos (o de los últimos 30 si
+  empieza tarde), confirmada por el VWAP del valor y por la dirección del SPY.
+  - Rompe al alza + sobre su VWAP + SPY alcista → **LARGO**.
+  - Rompe a la baja + bajo su VWAP + SPY bajista → **CORTO**.
+- **Órdenes bracket:** stop y objetivo puestos en el bróker desde el primer
+  segundo. Stop = media anchura del rango (0,35%–1,5%); objetivo = 2× el stop.
+- **Riesgo:** 1,5% de la cuenta por operación, hasta 4 posiciones, exposición
+  total hasta 2× la cuenta (apalancado), máx. 50% en una sola posición.
+- **Cierra todo** al final de la ventana: nunca duerme con posiciones.
+- Si el día pierde un 5%, cierra todo y para hasta el día siguiente.
 
-**Cripto (máx. 12% de la cuenta)** — cada 4 horas, 24/7:
-- BTC, ETH y SOL. Elige los 2 con mejor tendencia por encima de su media de 50 días.
-- Rebalancea una vez al día; stop dinámico del 15%.
+## Resultados
+- `registros/resumen.txt` — resultado acumulado y de los últimos días.
+- `registros/diario.csv` — resultado de cada día.
+- `registros/operaciones_intradia.csv` — cada entrada con su stop y objetivo.
+- `registros/intradia.log` — registro detallado.
 
-**Freno de emergencia:** desactivado (cuenta Paper). Se puede reactivar poniendo
-`FRENO_EMERGENCIA = True` en `estrategia.py` (vende todo si la cuenta cae un 15%).
+## Manejo
+- Lanzar a mano: **Actions → Bot intradia agresivo (Paper) → Run workflow**.
+- Pararlo: **Actions → ··· → Disable workflow**.
+- Parámetros: `senales.py`.
 
-**Seguridad:** se niega a funcionar si la clave no es de Paper (`PK…`) o si la cuenta
-no es Paper. Nunca toca dinero real.
-
-## Dónde ver los resultados
-- `registros/resumen.txt` — estado actual de la cartera.
-- `registros/operaciones.csv` — historial de compras y ventas.
-- `registros/bot.log` — registro detallado.
-- Pestaña **Actions** del repositorio — cada ejecución.
-- Web de Alpaca con la vista *Paper Trading*.
-
-## Ejecutarlo a mano
-Pestaña **Actions → Bot de trading (Paper) → Run workflow** y elige `acciones` o `cripto`.
-
-## Pararlo
-Pestaña **Actions → Bot de trading (Paper) → ··· → Disable workflow**.
-
-> Prueba con dinero ficticio. Resultados simulados no garantizan resultados futuros.
+> Dinero ficticio. Las fills en Paper son más optimistas que en real; ninguna
+> estrategia garantiza beneficios.
