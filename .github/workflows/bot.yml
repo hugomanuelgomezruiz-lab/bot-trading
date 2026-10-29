@@ -2,8 +2,12 @@ name: Bot de trading (Paper)
 
 on:
   schedule:
-    # Acciones: 15:45 UTC de lunes a viernes (bolsa de EE. UU. abierta todo el año)
-    - cron: "45 15 * * 1-5"
+    # Acciones: varios intentos en horario de bolsa de EE. UU. (GitHub a veces retrasa
+    # horas las tareas programadas). El bot solo rebalancea una vez; el resto vigila stops.
+    - cron: "7 14 * * 1-5"
+    - cron: "37 15 * * 1-5"
+    - cron: "13 17 * * 1-5"
+    - cron: "43 18 * * 1-5"
     # Cripto: cada 4 horas, todos los días
     - cron: "17 */4 * * *"
   workflow_dispatch:
@@ -36,10 +40,10 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "modo=${{ inputs.modo }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "45 15 * * 1-5" ]; then
-            echo "modo=acciones" >> "$GITHUB_OUTPUT"
-          else
+          elif [ "${{ github.event.schedule }}" = "17 */4 * * *" ]; then
             echo "modo=cripto" >> "$GITHUB_OUTPUT"
+          else
+            echo "modo=acciones" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Ejecutar bot
