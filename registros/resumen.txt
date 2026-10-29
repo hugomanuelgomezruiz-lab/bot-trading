@@ -1,15 +1,10 @@
-BOT DE TRADING - CUENTA PAPER (dinero ficticio)
-Actualizado: 29/10/2026 05:55 UTC
-Última acción: [cripto] cripto rebalanceada (0 posiciones)
+BOT INTRADIA AGRESIVO - CUENTA PAPER (dinero ficticio)
+Actualizado: 29/10/2026 16:12 UTC
+Última sesión: 2026-10-29: -162.60 $ (-0.16%), 4 operaciones, fin de la ventana
 
-Patrimonio: 99,603.71 $   (inicio: 100,076.06 $, resultado: -472.35 $ / -0.47%)
-Efectivo:   51,944.65 $
-Máximo histórico: 100,175.40 $
-Último rebalanceo acciones: 2026-10-23
-Último rebalanceo cripto:   2026-10-29
-Pausa: no
+Patrimonio: 100,257.66 $
+Desde que empezó el bot intradía (100,433.08 $): -175.42 $ (-0.17%)
+Días operados: 1  (en positivo: 0)
 
-POSICIONES:
-  XLV        18,218.55 $  ( 18.3%)  P/G +4.02 $ (+0.0%)
-  COST       17,469.18 $  ( 17.5%)  P/G -425.14 $ (-2.4%)
-  LLY        11,971.32 $  ( 12.0%)  P/G -68.67 $ (-0.6%)
+ÚLTIMOS DÍAS:
+  2026-10-29     -162.60 $  (-0.16%)  4 operaciones

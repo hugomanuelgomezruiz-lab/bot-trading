@@ -1,0 +1,9 @@
+2026-10-29 15:02:19  INFO    ==== Sesión 2026-10-29: 15:02 -> 16:12 UTC. Patrimonio 100433.08 $ ====
+2026-10-29 15:02:19  INFO    Cierro posiciones que quedaban abiertas.
+2026-10-29 15:02:25  INFO    Rangos: NVDA 212.97-214.34, TSLA 404.49-406.82, AMD 564.25-569.74, META 622.12-627.35, AAPL 348.42-350.09, AMZN 245.53-247.58, MSFT 519.59-527.90, GOOGL 283.74-286.38, NFLX 61.70-62.01, AVGO 341.49-343.47, PLTR 194.00-195.78, COIN 159.66-163.57, QQQ 712.68-716.83, SPY 767.70-770.23
+2026-10-29 15:09:37  INFO    LARGO META x79 a ~628.30 | stop 625.69 | objetivo 633.52 | fuerza 0.18
+2026-10-29 15:09:37  INFO    LARGO AVGO x146 a ~343.73 | stop 342.53 | objetivo 346.14 | fuerza 0.13
+2026-10-29 15:09:37  INFO    LARGO AMD x88 a ~570.21 | stop 567.47 | objetivo 575.70 | fuerza 0.09
+2026-10-29 15:15:44  INFO    LARGO GOOGL x175 a ~286.52 | stop 285.20 | objetivo 289.16 | fuerza 0.05
+2026-10-29 16:12:46  INFO    Cierro todo (fin de la ventana).
+2026-10-29 16:12:49  INFO    Resultado del día: 2026-10-29: -162.60 $ (-0.16%), 4 operaciones, fin de la ventana
