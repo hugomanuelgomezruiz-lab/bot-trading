@@ -9,3 +9,15 @@
 2026-10-29 16:12:49  INFO    Resultado del día: 2026-10-29: -162.60 $ (-0.16%), 4 operaciones, fin de la ventana
 2026-10-29 20:35:55  INFO    La sesión de hoy ya se hizo. Salgo (ahorro minutos).
 2026-10-29 21:53:45  INFO    La sesión de hoy ya se hizo. Salgo (ahorro minutos).
+2026-10-30 18:46:48  INFO    ==== Sesión 2026-10-30: 18:46 -> 19:55 UTC. Patrimonio 100252.52 $ ====
+2026-10-30 18:46:51  INFO    Rangos: NVDA 200.95-202.40, TSLA 393.90-396.16, AMD 492.36-498.11, META 612.14-615.86, AAPL 342.86-344.13, AMZN 237.57-238.85, MSFT 518.70-520.89, GOOGL 277.42-278.35, NFLX 61.88-62.05, AVGO 319.33-321.23, PLTR 183.96-184.93, COIN 137.46-138.48, QQQ 683.66-686.29, SPY 750.54-752.79
+2026-10-30 18:47:56  INFO    CORTO NFLX x810 a ~61.83 | stop 62.04 | objetivo 61.39 | fuerza 0.29
+2026-10-30 18:48:59  INFO    CORTO AMZN x211 a ~237.41 | stop 238.25 | objetivo 235.75 | fuerza 0.12
+2026-10-30 18:51:04  INFO    CORTO GOOGL x180 a ~277.24 | stop 278.21 | objetivo 275.30 | fuerza 0.19
+2026-10-30 18:51:04  INFO    CORTO META x81 a ~611.69 | stop 613.83 | objetivo 607.41 | fuerza 0.12
+2026-10-30 19:52:00  INFO    LARGO COIN x351 a ~141.54 | stop 141.03 | objetivo 142.56 | fuerza 2.99
+2026-10-30 19:52:00  INFO    LARGO AVGO x152 a ~325.75 | stop 324.61 | objetivo 328.03 | fuerza 2.39
+2026-10-30 19:52:00  INFO    LARGO TSLA x124 a ~399.41 | stop 398.01 | objetivo 402.21 | fuerza 1.44
+2026-10-30 19:52:00  INFO    LARGO SPY x65 a ~755.71 | stop 753.07 | objetivo 761.00 | fuerza 1.30
+2026-10-30 19:55:03  INFO    Cierro todo (fin de la ventana).
+2026-10-30 19:56:35  INFO    Resultado del día: 2026-10-30: -974.27 $ (-0.97%), 8 operaciones, fin de la ventana
