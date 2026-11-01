@@ -208,7 +208,7 @@ def bucle(broker: Broker, reloj: Reloj, fin: datetime, apertura: datetime, rango
 
             huecos = S.MAX_POSICIONES - len(posiciones)
             candidatos = []
-            if huecos > 0:
+            if huecos > 0 and reloj.ahora() < fin - timedelta(minutes=S.SIN_ENTRADAS_FINAL_MIN):
                 for s, b in barras.items():
                     if s in operados or s in posiciones:
                         continue
