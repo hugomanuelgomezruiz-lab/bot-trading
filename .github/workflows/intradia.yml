@@ -5,10 +5,15 @@ name: Bot intradia agresivo (Paper)
 # (GitHub a veces retrasa horas las tareas programadas). ~1.750 min/mes.
 on:
   schedule:
-    - cron: "33 13 * * 1-5"   # apertura en horario de verano de EE. UU.
-    - cron: "33 14 * * 1-5"   # apertura en horario de invierno de EE. UU.
-    - cron: "45 15 * * 1-5"   # respaldo
-    - cron: "30 17 * * 1-5"   # respaldo
+    # GitHub está retrasando estas tareas ~4-5 h. Se programan adelantadas y
+    # repartidas para que alguna llegue justo a la apertura (14:30 UTC en invierno).
+    # Las que llegan antes de hora salen en segundos; si llega hasta 12 min antes, espera.
+    - cron: "7 8 * * 1-5"
+    - cron: "37 8 * * 1-5"
+    - cron: "7 9 * * 1-5"
+    - cron: "37 9 * * 1-5"
+    - cron: "7 10 * * 1-5"
+    - cron: "45 15 * * 1-5"   # último respaldo (sesión tardía si ninguna llegó a tiempo)
   workflow_dispatch:
 
 permissions:

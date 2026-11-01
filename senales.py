@@ -34,6 +34,7 @@ PERDIDA_DIARIA_MAX = 0.05      # si el día pierde un 5%, cierra todo y para
 DURACION_SESION_MIN = 70       # minutos de operativa por día (presupuesto GitHub)
 CIERRE_ANTES_MIN = 5           # cierra todo 5 min antes del fin de la ventana
 SIN_ENTRADAS_FINAL_MIN = 25    # no abre operaciones nuevas en los últimos 25 min
+ESPERA_MAX_APERTURA_MIN = 12   # si llega poco antes de la apertura, la espera
 
 
 def vwap(barras: pd.DataFrame) -> float:

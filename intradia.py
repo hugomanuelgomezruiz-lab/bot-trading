@@ -254,8 +254,14 @@ def sesion(broker: Broker, reloj: Reloj) -> str:
         return ""
     abierto, apertura, cierre = broker.estado_mercado()
     if not abierto:
-        log.info("Bolsa cerrada. Salgo.")
-        return ""
+        falta = (apertura - ahora).total_seconds() / 60 if apertura else None
+        if falta is not None and 0 < falta <= S.ESPERA_MAX_APERTURA_MIN:
+            log.info("La bolsa abre en %.0f min: espero.", falta)
+            reloj.dormir(falta * 60 + 10)
+            ahora = reloj.ahora()
+        else:
+            log.info("Bolsa cerrada. Salgo.")
+            return ""
     fin = min(ahora + timedelta(minutes=S.DURACION_SESION_MIN), cierre - timedelta(minutes=S.CIERRE_ANTES_MIN))
     if fin - ahora < timedelta(minutes=20):
         log.info("Queda muy poca sesión. Salgo.")
