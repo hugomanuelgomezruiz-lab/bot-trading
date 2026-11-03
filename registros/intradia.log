@@ -38,3 +38,14 @@
 2026-11-02 19:43:30  INFO    La sesión de hoy ya se hizo. Salgo (ahorro minutos).
 2026-11-02 20:16:17  INFO    La sesión de hoy ya se hizo. Salgo (ahorro minutos).
 2026-11-02 23:13:23  INFO    La sesión de hoy ya se hizo. Salgo (ahorro minutos).
+2026-11-03 14:40:13  INFO    ==== Sesión 2026-11-03: 14:40 -> 15:50 UTC. Patrimonio 100033.48 $ ====
+2026-11-03 14:40:13  INFO    Espero a que se forme el rango de apertura (14:45 UTC).
+2026-11-03 14:45:07  INFO    Rangos: NVDA 205.95-209.09, TSLA 400.92-406.40, AMD 473.99-496.10, META 610.13-614.92, AAPL 325.60-332.67, AMZN 246.24-249.80, MSFT 508.06-512.41, GOOGL 278.06-281.22, NFLX 62.03-63.00, AVGO 326.78-335.47, PLTR 165.32-172.61, COIN 138.12-143.36, QQQ 683.20-686.77, SPY 752.44-754.39
+2026-11-03 14:46:12  INFO    LARGO AMD x100 a ~497.23 | stop 489.77 | objetivo 512.15 | fuerza 0.05
+2026-11-03 14:48:15  INFO    CORTO NFLX x803 a ~61.96 | stop 62.45 | objetivo 60.99 | fuerza 0.07
+2026-11-03 14:49:16  INFO    LARGO AAPL x149 a ~333.01 | stop 329.47 | objetivo 340.08 | fuerza 0.05
+2026-11-03 14:50:18  INFO    LARGO COIN x347 a ~143.55 | stop 141.40 | objetivo 147.86 | fuerza 0.04
+2026-11-03 14:57:26  INFO    LARGO META x80 a ~615.69 | stop 613.30 | objetivo 620.48 | fuerza 0.16
+2026-11-03 15:06:39  INFO    CORTO GOOGL x177 a ~277.84 | stop 279.42 | objetivo 274.68 | fuerza 0.07
+2026-11-03 15:51:08  INFO    Cierro todo (fin de la ventana).
+2026-11-03 15:51:11  INFO    Resultado del día: 2026-11-03: -54.88 $ (-0.05%), 6 operaciones, fin de la ventana
