@@ -75,3 +75,15 @@
 2026-11-05 15:40:16  INFO    Cierro todo (fin de la ventana).
 2026-11-05 15:40:19  INFO    Resultado del día: 2026-11-05: +5,517.10 $ (+5.60%), 5 operaciones, fin de la ventana
 2026-11-05 21:34:33  INFO    La sesión de hoy ya se hizo. Salgo (ahorro minutos).
+2026-11-06 14:27:48  INFO    La bolsa abre en 2 min: espero.
+2026-11-06 14:30:10  INFO    ==== Sesión 2026-11-06: 14:30 -> 15:40 UTC. Patrimonio 103957.12 $ ====
+2026-11-06 14:30:10  INFO    Espero a que se forme el rango de apertura (14:45 UTC).
+2026-11-06 14:45:07  INFO    Rangos: NVDA 190.40-194.52, TSLA 347.70-354.77, AMD 433.97-453.56, META 607.04-621.80, AAPL 338.59-341.69, AMZN 258.60-263.49, MSFT 525.00-532.28, GOOGL 284.78-290.46, NFLX 63.47-64.18, AVGO 302.87-311.33, PLTR 157.31-161.30, COIN 134.04-137.92, QQQ 655.25-661.63, SPY 734.61-738.97
+2026-11-06 14:46:12  INFO    LARGO PLTR x320 a ~162.25 | stop 160.25 | objetivo 166.24 | fuerza 0.24
+2026-11-06 14:46:12  INFO    LARGO SPY x70 a ~739.87 | stop 737.28 | objetivo 745.05 | fuerza 0.21
+2026-11-06 14:46:12  INFO    LARGO QQQ x78 a ~662.62 | stop 659.43 | objetivo 669.00 | fuerza 0.16
+2026-11-06 14:46:12  INFO    LARGO AMD x114 a ~455.07 | stop 448.24 | objetivo 468.72 | fuerza 0.08
+2026-11-06 15:06:58  INFO    LARGO TSLA x142 a ~356.55 | stop 353.02 | objetivo 363.62 | fuerza 0.25
+2026-11-06 15:12:02  INFO    LARGO AAPL x149 a ~342.28 | stop 340.73 | objetivo 345.38 | fuerza 0.19
+2026-11-06 15:40:50  INFO    Cierro todo (fin de la ventana).
+2026-11-06 15:40:56  INFO    Resultado del día: 2026-11-06: -1,548.56 $ (-1.49%), 6 operaciones, fin de la ventana
