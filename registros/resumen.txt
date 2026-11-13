@@ -1,13 +1,12 @@
 BOT INTRADIA AGRESIVO - CUENTA PAPER (dinero ficticio)
-Actualizado: 12/11/2026 15:40 UTC
-Última sesión: 2026-11-12: -1,577.87 $ (-1.52%), 5 operaciones, fin de la ventana
+Actualizado: 13/11/2026 16:02 UTC
+Última sesión: 2026-11-13: +3,048.39 $ (+2.98%), 7 operaciones, fin de la ventana
 
-Patrimonio: 102,292.07 $
-Desde que empezó el bot intradía (100,433.08 $): +1,858.99 $ (+1.85%)
-Días operados: 11  (en positivo: 2)
+Patrimonio: 105,335.18 $
+Desde que empezó el bot intradía (100,433.08 $): +4,902.10 $ (+4.88%)
+Días operados: 12  (en positivo: 3)
 
 ÚLTIMOS DÍAS:
-  2026-10-30     -974.27 $  (-0.97%)  8 operaciones
   2026-11-02     -158.80 $  (-0.16%)  5 operaciones
   2026-11-03      -54.88 $  (-0.06%)  6 operaciones
   2026-11-04   -1,521.29 $  (-1.52%)  6 operaciones
@@ -17,3 +16,4 @@ Días operados: 11  (en positivo: 2)
   2026-11-10     -282.49 $  (-0.27%)  6 operaciones
   2026-11-11     -702.19 $  (-0.67%)  6 operaciones
   2026-11-12   -1,577.87 $  (-1.52%)  5 operaciones
+  2026-11-13   +3,048.39 $  (+2.98%)  7 operaciones
