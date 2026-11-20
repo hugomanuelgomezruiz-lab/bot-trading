@@ -175,3 +175,15 @@
 2026-11-17 23:09:49  INFO    La sesión de hoy ya se hizo. Salgo (ahorro minutos).
 2026-11-18 22:41:46  INFO    Bolsa cerrada. Salgo.
 2026-11-19 22:46:01  INFO    Bolsa cerrada. Salgo.
+2026-11-20 15:48:28  INFO    ==== Sesión 2026-11-20: 15:48 -> 16:58 UTC. Patrimonio 105067.98 $ ====
+2026-11-20 15:48:28  INFO    Cierro posiciones que quedaban abiertas.
+2026-11-20 15:48:33  INFO    Rangos: NVDA 135.66-139.65, TSLA 361.14-365.30, AMD 441.63-458.03, META 574.90-581.46, AAPL 348.26-349.96, AMZN 254.30-256.89, MSFT 492.38-499.62, GOOGL 277.41-280.27, NFLX 58.27-58.99, AVGO 315.46-323.63, PLTR 146.62-149.89, COIN 105.41-108.55, QQQ 626.44-634.65, SPY 706.39-712.65
+2026-11-20 15:52:34  INFO    CORTO AAPL x150 a ~347.98 | stop 349.20 | objetivo 345.54 | fuerza 0.16
+2026-11-20 15:52:34  INFO    CORTO NFLX x902 a ~58.19 | stop 58.55 | objetivo 57.47 | fuerza 0.12
+2026-11-20 15:56:36  INFO    CORTO GOOGL x189 a ~277.22 | stop 278.65 | objetivo 274.36 | fuerza 0.07
+2026-11-20 15:58:36  INFO    CORTO AMZN x207 a ~253.91 | stop 255.20 | objetivo 251.32 | fuerza 0.15
+2026-11-20 16:19:43  INFO    CORTO TSLA x145 a ~360.88 | stop 362.96 | objetivo 356.72 | fuerza 0.06
+2026-11-20 16:20:44  INFO    CORTO AVGO x166 a ~315.11 | stop 319.20 | objetivo 306.94 | fuerza 0.04
+2026-11-20 16:32:48  INFO    CORTO META x92 a ~572.61 | stop 575.89 | objetivo 566.05 | fuerza 0.35
+2026-11-20 16:58:58  INFO    Cierro todo (fin de la ventana).
+2026-11-20 16:59:02  INFO    Resultado del día: 2026-11-20: +979.44 $ (+0.93%), 7 operaciones, fin de la ventana
